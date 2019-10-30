@@ -6,7 +6,7 @@ class BaseCell extends StatelessWidget {
 
   final double width;
   final Widget child;
-  final Function onClick;
+  final Function() onClick;
 
   @override
   Widget build(BuildContext context) {
