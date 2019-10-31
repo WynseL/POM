@@ -41,10 +41,10 @@ class HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            InstrumentRow(InstrumentType.GUITAR_1),
-            InstrumentRow(InstrumentType.GUITAR_2),
-            InstrumentRow(InstrumentType.BASS),
-            InstrumentRow(InstrumentType.DRUMS),
+            InstrumentRow(InstrumentType.drums),
+            InstrumentRow(InstrumentType.guitar1),
+            InstrumentRow(InstrumentType.bass),
+            InstrumentRow(InstrumentType.guitar2),
           ],
         ),
       ),

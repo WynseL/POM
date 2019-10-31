@@ -1,0 +1,17 @@
+enum Fret {
+  fret0,
+  fret1,
+  fret2,
+  fret3,
+  fret4,
+  fret5,
+  fret6,
+  fret7,
+  fret8,
+  fret9,
+  fret10,
+  fret11,
+  fret12,
+  fret13,
+  fret14,
+}

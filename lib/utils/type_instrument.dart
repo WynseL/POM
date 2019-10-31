@@ -1,6 +1,6 @@
 enum InstrumentType {
-  GUITAR_1,
-  GUITAR_2,
-  BASS,
-  DRUMS,
+  guitar1,
+  guitar2,
+  bass,
+  drums,
 }

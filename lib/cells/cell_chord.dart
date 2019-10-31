@@ -14,7 +14,6 @@ class ChordCell extends StatefulWidget {
 }
 
 class _ChordCellState extends State<ChordCell> {
-
   _ChordCellState(this.type);
 
   final InstrumentType type;
@@ -35,10 +34,12 @@ class _ChordCellState extends State<ChordCell> {
         ),
       ),
       onClick: () {
-        showDialog(
-          context: context,
-          builder: (context) => GuitarChordForm(),
-        );
+        // if (type == InstrumentType.guitar1 || type == InstrumentType.guitar2) {
+          showDialog(
+            context: context,
+            builder: (context) => GuitarChordForm(),
+          );
+        // }
       },
     );
   }
