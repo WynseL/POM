@@ -10,15 +10,10 @@ class InstrumentRow extends StatefulWidget {
   final InstrumentType type;
 
   @override
-  State<StatefulWidget> createState() => InstrumentRowState(type);
+  State<StatefulWidget> createState() => InstrumentRowState();
 }
 
 class InstrumentRowState extends State<InstrumentRow> {
-
-  InstrumentRowState(this.type);
-
-  final InstrumentType type;
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -28,10 +23,10 @@ class InstrumentRowState extends State<InstrumentRow> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           InstrumentCell(),
-          ChordCell(type),
-          ChordCell(type),
-          ChordCell(type),
-          ChordCell(type),
+          ChordCell(this.widget.type),
+          ChordCell(this.widget.type),
+          ChordCell(this.widget.type),
+          ChordCell(this.widget.type),
         ],
       ),
     );
