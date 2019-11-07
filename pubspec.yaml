@@ -20,6 +20,7 @@ dependencies:
   flutter:
     sdk: flutter
   tuple: ^1.0.3
+  audioplayers: ^0.13.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -41,7 +42,26 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - assets/data/
+    - assets/data/Guitars/GuitRhythmManualAE00.mp3
+    - assets/data/Guitars/GuitRhythmManualBE00.mp3
+    - assets/data/Guitars/GuitRhythmManualCE00.mp3
+    - assets/data/Guitars/GuitRhythmManualDE00.mp3
+    - assets/data/Guitars/GuitRhythmManualEE00.mp3
+    - assets/data/Guitars/GuitRhythmManualFE00.mp3
+    - assets/data/Guitars/GuitRhythmManualGE00.mp3
+    - assets/data/Guitars/GuitRhythmManualHE00.mp3
+    - assets/data/Guitars/GuitRhythmManualIE00.mp3
+    - assets/data/Guitars/GuitRhythmManualJE00.mp3
+    - assets/data/Guitars/GuitRhythmManualKE00.mp3
+    - assets/data/Guitars/GuitRhythmManualLE00.mp3
+    - assets/data/Guitars/GuitRhythmManualME00.mp3
+    - assets/data/Guitars/GuitRhythmManualNE00.mp3
+    - assets/data/Guitars/GuitRhythmManualOE00.mp3
+    - assets/data/Guitars/GuitRhythmManualPE00.mp3
+    - assets/data/Guitars/GuitRhythmManualQE00.mp3
+    - assets/data/Guitars/GuitRhythmManualRE00.mp3
+    - assets/data/Guitars/GuitRhythmManualSE00.mp3
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:

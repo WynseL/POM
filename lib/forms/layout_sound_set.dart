@@ -31,25 +31,47 @@ class SoundSetLayoutState extends State<SoundSetLayout> {
         padding: EdgeInsets.all(5),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: Chords.EStringFret0.map((item) {
-            return ButtonTheme(
-              minWidth: 10.0,
-              child: MaterialButton(
-                onPressed: () {},
+            return Material(
+                child: InkWell(
+                onTap: () {
+                  
+                },
+                onLongPress: () { item.item2.play(); },
                 child: Container(
                   margin: EdgeInsets.all(0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Container(height: 5.0, color: Colors.brown,),
-                      Text(item.item1)
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(25, 20, 25, 20),
+                        child: Text(item.item1),
+                      ),
                     ],
-                  ),
+                  )
                 ),
-              )
+              ),
             );
+            // return ButtonTheme(
+            //   minWidth: 10.0,
+            //   child: MaterialButton(
+            //     onPressed: () {},
+            //     child: Container(
+            //       margin: EdgeInsets.all(0),
+            //       child: Column(
+            //         mainAxisAlignment: MainAxisAlignment.start,
+            //         crossAxisAlignment: CrossAxisAlignment.start,
+            //         children: <Widget>[
+            //           Container(height: 5.0, color: Colors.brown,),
+            //           Text(item.item1)
+            //         ],
+            //       ),
+            //     ),
+            //   )
+            // );
           }).toList(),
         ),
       ),

@@ -24,7 +24,8 @@ class _FretBoardLayoutState extends State<FretBoardLayout> {
           minWidth: 1.0,
           onPressed: callback,
           child: Container(child: (isDot ? CustomPaint(painter: DrawCircle(),) : null),),
-        ) : Center(child: (isDot ? CustomPaint(painter: DrawCircle(),) : null),)
+        ) : 
+        Center(child: (isDot ? CustomPaint(painter: DrawCircle(),) : null),)
     );
 
     return Container(
